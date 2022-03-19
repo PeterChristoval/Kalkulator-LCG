@@ -1,5 +1,5 @@
-const bAcak = document.querySelector('.bAcak');
 const tBody = document.querySelector('.tbody');
+const bAcak = document.querySelector('.bAcak');
 const z0 = document.querySelector('.z0');
 const c = document.querySelector('.c');
 const a = document.querySelector('.a');
@@ -24,4 +24,9 @@ function hitung(e) {
         </tr>`
         Z = (parseInt(a.value) * Z + parseInt(c.value)) % parseInt(m.value);
     }
+    bAcak.value = '';
+    a.value = '';
+    c.value = '';
+    m.value = '';
+    z0.value = '';
 }
